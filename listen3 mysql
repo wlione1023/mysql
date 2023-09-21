@@ -1,0 +1,37 @@
+資料庫更換步驟
+mysql -u- root -p
+
+pip install mysqlclient
+
+python 
+
+create database mylcc default character set utf8 collate utf8_general_ci;
+
+mysql -u- root -p mylcc < mylcc.sql
+
+
+============
+1. pip3 install virtualenvwrapper-win
+
+2. mkvirtualenv mydjango
+
+deactivate 退出虛擬環境
+workon 列出虛擬環境
+
+3. workon mydjango
+3-1. pip  install django
+4. cd\
+5. mkdir lccdjango
+6. cd lccdjango 到檔案路徑
+7. django-admin startproject  lcc
+#建過不用再建立(cd\ 到lcc
+
+python manage.py runserver
+#執行 伺服器
+
+資料庫有更動
+需要執行
+python manage.py midXXXX
+python manage.py migrate
+
+
