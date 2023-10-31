@@ -1,5 +1,5 @@
 資料庫更換步驟
-mysql -u- root -p
+mysql -u root -p
 
 pip install mysqlclient
 
@@ -7,7 +7,7 @@ python
 
 create database mylcc default character set utf8 collate utf8_general_ci;
 
-mysql -u- root -p mylcc < mylcc.sql
+mysql -u root -p mylcc < mylcc.sql
 
 
 ============
